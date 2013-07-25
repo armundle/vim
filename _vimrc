@@ -250,15 +250,15 @@ nmap <A-t> :tabnew<CR>
 
 
 "niScope source search
-function! SearchniScopeDriver()
-   cd P:\Measurements\highSpeedDigitizers\niScope\driver\development\4.0\amundle\source\
+function! CustomFunction()
+   cd <path to dir>
    tabnew
    FufCoverageFile
 endfunction
-nmap<silent> <A-s>  :call SearchniScopeDriver()<CR>
+nmap<silent> <A-s>  :call CustomFunction()<CR>
 
 "Fufbuffer
-nmap<silent> <>  :call SearchniScopeDriver()<CR>
+nmap<silent> <>  :call CustomFunction()<CR>
 nmap <leader>f :FufBuffer<CR>
 
 "OmniComplete
